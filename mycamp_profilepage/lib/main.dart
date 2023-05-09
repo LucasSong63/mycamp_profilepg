@@ -38,7 +38,7 @@ class ProfilePage extends StatelessWidget {
                   Column(
                     children: [
                       UsernameTxt(),
-                      PhoneNoTxt(),
+                      emailTxt(),
                     ],
                   ),
                 ],
@@ -93,9 +93,9 @@ class ProfilePage extends StatelessWidget {
     );
   }
 
-  Text PhoneNoTxt() {
+  Text emailTxt() {
     return Text(
-      'Phone Number',
+      'Email Address',
       style: TextStyle(fontSize: 12),
     );
   }
