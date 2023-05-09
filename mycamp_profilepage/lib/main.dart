@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mycamp_profilepage/update_profile';
+import 'package:mycamp_profilepage/update_profile.dart';
 
 void main() => runApp(MaterialApp(
       title: 'Profile',
@@ -14,6 +14,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(0, 255, 255, 255),
         leading: IconButton(
           onPressed: () {},
           icon: Icon(Icons.home),
@@ -69,6 +70,17 @@ class ProfilePage extends StatelessWidget {
                 onPress: () {},
               ),
             ],
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: Container(
+        height: 50,
+        margin: const EdgeInsets.all(10),
+        child: ElevatedButton(
+          onPressed: () {},
+          child: const Center(
+            child: Text('Log Out'),
           ),
         ),
       ),
